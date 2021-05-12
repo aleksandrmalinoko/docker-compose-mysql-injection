@@ -8,16 +8,17 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 
-CREATE TABLE `Person` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `name` varchar(20) NOT NULL
+  `username` varchar(20) NOT NULL,
+  `user_password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-INSERT INTO `Person` (`id`, `name`) VALUES
-(1, 'William'),
-(2, 'Marc'),
-(3, 'John');
+INSERT INTO `users` (`id`, `username`, `user_password`) VALUES
+(1, 'alex', '123'),
+(2, 'alex1', '1234'),
+(3, 'alex2', '12344');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
